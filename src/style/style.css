@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    font-family: 'Delius Unicase', cursive;
+}
+
+span {
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-holder {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-holder::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 4px;
+    top: 0;
+    background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+    transition: all ease-in-out 0.3s;
+    border-radius: 20px;
+}
+
+.img-holder:hover::before {
+    background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.447552) 6.99%, rgba(187, 186, 192, 0.26) 12.29%);
+}
+
+.text-holder {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.icon-holder {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    padding: 20px 20px 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.img-holder:hover>.icon-holder {
+    opacity: 1;
+}
+
+.icon-holder>img {
+    max-width: 40px;
+    width: 100%;
+    border-radius: 0;
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.icon-holder>img:hover {
+    opacity: 1;
+}
+
+.author {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.architect {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 370px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.architecture > div {
+    position: relative;
+}
+
+.tower {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.valley {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.bycicle {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.castle {
+    grid-area: 2 / 3 / 4 / 4;
+}
+
+.rainbow {
+    grid-area: 3 / 1 / 3 / 1;
+}
+
+.bridge {
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+.life {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(4, 370px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.life > div {
+    position: relative;
+}
+
+.waterfall {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.sunrise {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.alone-star{
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.lake {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.violet {
+    grid-area: 4 / 1 / 4 / 3;
+}
+
+.alone-tree{
+    grid-area: 4 / 3 / 4 / 3;
+}
+
+.fashion {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(5, 370px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.fashion > div {
+    position: relative;
+}
+
+.black-dress {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.red-blue {
+    grid-area: 1 / 2 / 2 / 2;
+}
+
+.yellow {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+.black-white {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.hats {
+    grid-area: 2 / 3 / 3 / 3;
+}
+
+.glasses {
+    grid-area: 3 / 1 / 4 / 1;
+}
+
+.orange {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+.friends {
+    grid-area: 4 / 2 / 4 / 4;
+}
+
+.dred {
+    grid-area: 5 / 1 / 5 / 3;
+}
+
+.love {
+    grid-area: 5 / 3 / 5 / 3;
+}
